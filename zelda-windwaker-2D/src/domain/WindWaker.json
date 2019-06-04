@@ -1,0 +1,212 @@
+{
+  "startingIsland": "OutsetIsland",
+  "endingIsland": "HyruleCastle",
+  "islands": [
+    {
+      "name": "OutsetIsland",
+      "description": "You are on Outset Island, your home Link you sleepyhead!",
+      "directions": [
+        {
+          "directionName": "Northwest",
+          "island": "ForsakenFortress",
+          "enabled": false,
+          "validKeyNames": [ "HeroSword" ]
+        },
+        {
+          "directionName": "Northeast",
+          "island": "DragonRoostIsland",
+          "enabled": false,
+          "validKeyNames": [ "GrapplingHook" ]
+        },
+        {
+          "directionName": "East",
+          "island": "ForestHaven",
+          "enabled": false,
+          "validKeyNames": [ "GrapplingHook", "HeroSword" ]
+        }
+      ],
+      "items": [
+        {
+          "name": "HeroSword"
+        }
+      ],
+      "monsters": []
+    },
+    {
+      "name": "ForsakenFortress",
+      "description": "You have been shot by a cannon into the ominous Forsaken Fortress, home of the evil Ganon.",
+      "directions": [
+        {
+          "directionName": "Southeast",
+          "island": "WindfallIsland",
+          "enabled": true,
+          "validKeyNames": []
+        }
+      ],
+      "items": [],
+      "monsters": []
+    },
+    {
+      "name": "WindfallIsland",
+      "description": "You wake up in a boat just outside of Windfall Island, the biggest market town in the Great Sea.",
+      "directions": [
+        {
+          "directionName": "East",
+          "island": "DragonRoostIsland",
+          "enabled": true,
+          "validKeyNames": []
+        },
+        {
+          "directionName": "Southeast",
+          "island": "ForestHaven",
+          "enabled": false,
+          "validKeyNames": [ "GrapplingHook" ]
+        }
+      ],
+      "items": [],
+      "monsters": []
+    },
+    {
+      "name": "DragonRoostIsland",
+      "description": "You made it to Dragon Roost Island, home of the Rito tribe and the Spirit of the Sky, Valoo.",
+      "directions": [
+        {
+          "directionName": "South",
+          "island": "ForestHaven",
+          "enabled": false,
+          "validKeyNames": [ "GrapplingHook" ]
+        },
+        {
+          "directionName": "West",
+          "island": "WindfallIsland",
+          "enabled": true,
+          "validKeyNames": []
+        },
+        {
+          "directionName": "Southwest",
+          "island": "TowerOfTheGods",
+          "enabled": false,
+          "validKeyNames": [ "DekuLeaf" ]
+        }
+      ],
+      "items": [
+        {
+          "name": "GrapplingHook"
+        }
+      ],
+      "monsters": [
+        {
+          "name": "Gohma",
+          "weakness": [ "GrapplingHook" ]
+        }
+      ]
+    },
+    {
+      "name": "ForestHaven",
+      "description": "You have traveled to Forest Haven, home of the Koroks and the Great Deku Tree.",
+      "directions": [
+        {
+          "directionName": "North",
+          "island": "DragonRoostIsland",
+          "enabled": true,
+          "validKeyNames": [ "none" ]
+        },
+        {
+          "directionName": "West",
+          "island": "WindfallIsland",
+          "enabled": true,
+          "validKeyNames": [ "none" ]
+        },
+        {
+          "directionName": "Northwest",
+          "island": "TowerOfTheGods",
+          "enabled": false,
+          "validKeyNames": [ "DekuLeaf" ]
+        }
+      ],
+      "items": [
+        {
+          "name": "DekuLeaf"
+        }
+      ],
+      "monsters": [
+        {
+          "name": "KalleDemos",
+          "weakness": [ "DekuLeaf" ]
+        }
+      ]
+    },
+    {
+      "name": "TowerOfTheGods",
+      "description": "You have reached the Tower of the Gods, a sacred tower used by the Gods to test a hero's courage.",
+      "directions": [
+        {
+          "directionName": "Southwest",
+          "island": "OutsetIsland",
+          "enabled": true,
+          "validKeyNames": [ "none" ]
+        },
+        {
+          "directionName": "Down",
+          "island": "GanonTower",
+          "enabled": false,
+          "validKeyNames": [ "TriforceOfCourage" ]
+        }
+      ],
+      "items": [
+        {
+          "name": "TriforceOfCourage"
+        },
+        {
+          "name": "MasterSword"
+        }
+      ],
+      "monsters": [
+        {
+          "name": "Darknut",
+          "weakness": [ "MasterSword", "DekuLeaf" ]
+        }
+      ]
+    },
+    {
+      "name": "HyruleCastle",
+      "description": "You are now in Hyrule Castle, the royal castle of Hyrule where Princess Zelda lives.",
+      "directions": [
+        {
+          "directionName": "Up",
+          "island": "GanonTower",
+          "enabled": false,
+          "validKeyNames": [ "TriforceOfCourage" ]
+        }
+      ],
+      "items": [],
+      "monsters": []
+    },
+    {
+      "name": "GanonTower",
+      "description": "You have reached the final boss, Ganon, at the top of his tower!",
+      "directions": [
+        {
+          "directionName": "Down",
+          "island": "HyruleCastle",
+          "enabled": false,
+          "validKeyNames": [ "TriforceOfStrength" ]
+        }
+      ],
+      "items": [
+        {
+          "name": "TriforceOfStrength"
+        }
+      ],
+      "monsters": [
+        {
+          "name": "Ganon",
+          "weakness": [ "TriforceOfCourage", "MasterSword" ]
+        }
+      ]
+    }
+  ],
+  "player": {
+    "items": []
+  }
+}
