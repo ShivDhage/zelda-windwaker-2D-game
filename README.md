@@ -1,3 +1,3 @@
 # Final Project
 
-Extension of Adventure-2 Project in C++ and with a GUI
+A Legend of Zelda: Windwaker 2D game in C++ and with a GUI
